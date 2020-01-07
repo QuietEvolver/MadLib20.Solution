@@ -5,8 +5,13 @@ namespace MadLibs20.Controllers
 {
     public class FunnyMadlibController : Controller 
     {
-        [Route("/funny")] //rootpath
-        public ActionResult FunnyMadLib( string noun, string adjective, string adverb, string verb) { 
+        // [Route("/funny/")]
+        // public ActionResult FunnyMadLib(){
+        //     return View();
+        // }
+
+        [Route("/funny/new")] //rootpath
+        public ActionResult New( string noun, string adjective, string adverb, string verb) { 
         FunnyMadLibVariable myFunnyMadLibVariable = new FunnyMadLibVariable();
         myFunnyMadLibVariable.Noun = noun;//"Lina";
         myFunnyMadLibVariable.Adjective = adjective;//"Hawaii";
